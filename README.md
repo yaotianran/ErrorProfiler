@@ -30,12 +30,12 @@ Overlapping consistency assessment needs two files: query name sorted sam file a
 
 #### Step3 Filter according to overlap length
 
-Fail to do this step will lead to an overestimated error rate and bias since the most of the sequencing error occurs at the end of the reads.
+Failing to do so will lead to an overestimated error rate and bias since the most of the sequencing error occurs at the end of the reads.
 
 > ./filter_overlap_length.py queryname.sam <length_cutoff>
 
 
-Ideally you should use read length as length_cutoff (e.g. filter\_overlap\_length.py queryname.sam 150) However a solid consistency assessment may need about 1M read pair use read length will discard too many data. Therefore probably you should use a smaller cutoff such as 148, 145 or even 140 as length_cutoff
+Ideally you should use read length as length_cutoff (e.g. filter\_overlap\_length.py queryname.sam 150) However a solid consistency assessment may need about 1M read pair using read length as cutoff will discard too much data. Therefore probably you should use a smaller cutoff such as 148, 145 or even 140 as length_cutoff
 
 #### Step4 Bin the base calls
 
