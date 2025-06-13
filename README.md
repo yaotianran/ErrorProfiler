@@ -28,9 +28,9 @@ Overlapping consistency assessment needs two files: query name sorted sam file a
 > samtools index @ <threads> sorted.bam
 
 
-#### Step3 Filter accord to overlap length
+#### Step3 Filter according to overlap length
 
-Fail to do this step will lead to an overestimated mean error rate since the most of the sequencing error occurs at the end of the reads.
+Fail to do this step will lead to an overestimated error rate and bias since the most of the sequencing error occurs at the end of the reads.
 
 > ./filter_overlap_length.py queryname.sam <length_cutoff>
 
