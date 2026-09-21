@@ -1,6 +1,6 @@
 # ErrorProfiler
 
-For the article "Characterization of sequencing error profile in three next generation sequencing platforms"
+For the article "Comprehensive Error Profiling of NovaSeq6000, NovaSeqX, and Sxxxx Pro Using Overlapping Paired-End Reads"
 
 ## simple tutorial
 
